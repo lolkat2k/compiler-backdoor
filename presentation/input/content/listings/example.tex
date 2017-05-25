@@ -1,0 +1,34 @@
+\begin{lstlisting}[
+  caption={Pseudo-program exhibiting the problem.},
+  label={lst:listing1}
+]
+fun main(int m) =
+let a = map(\x => x*x, iota(m)) in
+a in
+let b = zipWith(*, a, a) in
+b in
+let c = zipWith(*, a, b) in
+c in
+let d = zipWith(*, b, c) in
+d
+\end{lstlisting}
+
+
+%% \begin{lstlisting}[caption={Testing. File: \texttt{example.fut}}]
+%% fun [int,m] main(int m) =
+%% let a = copy(iota(m)) in
+%% loop(a) = for i < m do
+%% let a[i] = a[i] * a[i] in
+%% a
+%% in
+%% let b = copy(iota(m)) in
+%% loop(b) = for i < m do
+%% let b[i] = a[i] * b[i] in
+%% b
+%% in
+%% let c = copy(iota(m)) in
+%% loop(c) = for i < m do
+%% let c[i] = b[i] * c[i] in
+%% c
+%% in c
+%% \end{lstlisting}
