@@ -1,0 +1,56 @@
+Notes for setting up the environment for replicating
+Deniable Backdoors Using Compiler Bugs.
+
+
+Download clang and llvm (version 3.3):
+
+ * http://releases.llvm.org/download.html
+
+
+Install clang and llvm:
+
+ * mkdir build
+
+ * mv clang/ llvm/tools/clang
+
+ * cd build
+
+ * ../llvm/configure
+
+ * make
+
+ * make install
+
+
+Now you have the actual problem-maker in place, have fun! :-)
+To test this out, you can download and compile sudo:
+
+
+Download sudo (version 1.8.13):
+
+ * Original source code: https://www.sudo.ws/download.html#source
+
+ * With bug: https://github.com/regehr/sudo-1.8.13
+
+
+### NOT FINISHED: Look in the INSTALL.configure for compiler options!
+
+Here, create a new directory to install the sudo program:
+
+ * mkdir bad-sudo
+
+ * cd bad-sudo
+
+ * To configure the Makefiles (from here practically just follow
+   the INSTALL):
+
+   ./../sudo-1.8.13-git/configure \
+	--srcdir=../sudo-1.8.13-git/ \
+	--exec-prefix=/home/user/presentation/bad-sudo/ \
+	--bindir=/home/user/presentation/bad-sudo/
+
+ * make
+
+ * make install
+
+The sudo-executable should then be in the bad-sudo folder.
