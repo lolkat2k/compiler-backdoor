@@ -21,8 +21,9 @@
 # Demo: XXX
 
 # Appearances in the Wild
-  - BBN
-  - Induc-A/B/C
+  - BBN (https://en.wikipedia.org/wiki/BBN_Technologies)
+        (http://www.catb.org/jargon/html/B/back-door.html)
+  - Induc-A/B/C (https://www.virusbulletin.com/virusbulletin/2011/12/win32-induc-c-getting-noisier-library)
 
 # Evaluating attack
   - Possible to implement in pracsis?
