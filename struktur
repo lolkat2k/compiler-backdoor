@@ -1,0 +1,30 @@
+# Presentation of article and subject
+  - Proof of Conecpt or Get the Fuck Out issue 8 - Deniable Backdoors Using Compiler Bugs.
+  - Taking advantage of compiler bugs that causes miscompilations.
+
+# Exploiting CLANG/LLVM to compile bad sudo
+  - CLANG/LLVM
+  - Introduce bug
+  - Simplebug
+  - Explaining sudo
+  - Describe exploit
+
+# Demo: sudo
+  - Create user:              sudo useradd bob
+  - Change user:              su bob; whoami
+  - Who has sudo permissions: sudo less /etc/sudoers
+  - Show groups:              groups
+  - Shadow:                   cat /etc/shadow
+  - Sudo shadow:              sudo cat /etc/shadow
+  - Badsudo shadow:           ./sudo cat /etc/shadow
+
+# Demo: XXX
+
+# Historical Perspective
+
+# Evaluating attack
+  - Possible to implement in pracsis?
+  - Broken keyboards?
+  - Dangerous?
+
+
