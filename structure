@@ -5,11 +5,11 @@
 # Exploiting CLANG/LLVM to compile bad sudo
   - CLANG/LLVM
   - Introduce bug
-  - Simplebug
+  - DEMO: Simplebug
   - Explaining sudo
   - Describe exploit
 
-# Demo: sudo
+# DEMO: sudo
   - Create user:              sudo useradd bob
   - Change user:              su bob; whoami
   - Who has sudo permissions: sudo less /etc/sudoers
@@ -31,3 +31,4 @@
   - Dangerous?
 
 
+Trusting Trust Ken Thompson: https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf
