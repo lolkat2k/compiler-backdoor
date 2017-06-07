@@ -1,15 +1,16 @@
-# Presentation of article and subject
+# (ARNO) Presentation of article and subject 
+(https://www.alchemistowl.org/pocorgtfo/pocorgtfo08.pdf)
   - Proof of Conecpt or Get the Fuck Out issue 8 - Deniable Backdoors Using Compiler Bugs.
   - Taking advantage of compiler bugs that causes miscompilations.
 
 # Exploiting CLANG/LLVM to compile bad sudo
-  - CLANG/LLVM
-  - Introduce bug
-  - DEMO: Simplebug
-  - Explaining sudo
-  - Describe exploit
+  - (SUNE) CLANG/LLVM
+  - (SUNE) Introduce bug
+  - (SUNE) DEMO: simple-bug.c
+  - (JONATHAN) Explaining sudo
+  - (JONATHAN) Describe exploit
 
-# DEMO: sudo
+# (ARNO) DEMO: sudo
   - Create user:              sudo useradd bob
   - Change user:              su bob; whoami
   - Who has sudo permissions: sudo less /etc/sudoers
@@ -18,17 +19,14 @@
   - Sudo shadow:              sudo cat /etc/shadow
   - Badsudo shadow:           ./sudo cat /etc/shadow
 
-# Demo: XXX
-
 # Appearances in the Wild
-  - BBN (https://en.wikipedia.org/wiki/BBN_Technologies)
-        (http://www.catb.org/jargon/html/B/back-door.html)
-  - Induc-A/B/C (https://www.virusbulletin.com/virusbulletin/2011/12/win32-induc-c-getting-noisier-library)
+  - (SUNE) BBN (https://en.wikipedia.org/wiki/BBN_Technologies)
+               (http://www.catb.org/jargon/html/B/back-door.html)
+
+  - (ARNO) Induc-A/B/C (https://www.virusbulletin.com/virusbulletin/2011/12/win32-induc-c-getting-noisier-library)
 
 # Evaluating attack
-  - Possible to implement in practice?
-  - Broken keyboards?
-  - Dangerous?
+  - (JONATHAN) Possible to implement in practice?
 
 
 Trusting Trust Ken Thompson: https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf
