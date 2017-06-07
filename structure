@@ -1,7 +1,13 @@
 # (ARNO) Presentation of article and subject 
 (https://www.alchemistowl.org/pocorgtfo/pocorgtfo08.pdf)
   - Proof of Conecpt or Get the Fuck Out issue 8 - Deniable Backdoors Using Compiler Bugs.
-  - Taking advantage of compiler bugs that causes miscompilations.
+
+  - Production quality compiler DO have bugs
+  - Take advantage of miscompiling to build backdoors
+  - GCC has 3.200 open bugs (june 2015)
+  - Find a bug -> Find out how to exploit the bug -> Introduce patch that trips over the bug
+  - Claiming to improve sudos debugging output
+  - Inspection of the patched source code wont reveal the exploit
 
 # Exploiting CLANG/LLVM to compile bad sudo
   - (SUNE) CLANG/LLVM
