@@ -1,13 +1,15 @@
 # (ARNO) Presentation of article and subject 
 (https://www.alchemistowl.org/pocorgtfo/pocorgtfo08.pdf)
-  - Proof of Conecpt or Get the Fuck Out issue 8 - Deniable Backdoors Using Compiler Bugs.
 
-  - Production quality compiler DO have bugs
-  - Take advantage of miscompiling to build backdoors
-  - GCC has 3.200 open bugs (june 2015)
-  - Find a bug -> Find out how to exploit the bug -> Introduce patch that trips over the bug
-  - Claiming to improve sudos debugging output
-  - Inspection of the patched source code wont reveal the exploit
+  - Agenda
+
+  - Proof of Conecpt or Get the Fuck Out issue 8 - Deniable Backdoors Using Compiler Bugs (june 2015)
+  - Using compiler bugs to create backdoors
+
+  - Basic procedure:
+      Find a bug -> Find out how to exploit the bug -> Introduce patch that trips over the bug
+
+  - Bug in clang/llvm - privillege escalation in sudo
 
 # Exploiting CLANG/LLVM to compile bad sudo
   - (SUNE) CLANG/LLVM
@@ -17,9 +19,9 @@
   - (JONATHAN) Describe exploit
 
 # (ARNO) DEMO: sudo
+  - Check sudoers:            sudo less /etc/sudoers
   - Create user:              sudo useradd bob
   - Change user:              su bob; whoami
-  - Who has sudo permissions: sudo less /etc/sudoers
   - Show groups:              groups
   - Shadow:                   cat /etc/shadow
   - Sudo shadow:              sudo cat /etc/shadow
@@ -30,6 +32,7 @@
                (http://www.catb.org/jargon/html/B/back-door.html)
 
   - (ARNO) Induc-A/B/C (https://www.virusbulletin.com/virusbulletin/2011/12/win32-induc-c-getting-noisier-library)
+  
 
 # Evaluating attack
   - (JONATHAN) Possible to implement in practice?
