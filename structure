@@ -31,8 +31,11 @@
 
   - (ARNO) Induc-A/B/C (https://www.virusbulletin.com/virusbulletin/2011/12/win32-induc-c-getting-noisier-library)
 
-# Evaluating attack
-  - (JONATHAN) Possible to implement in practice?
+# (JONATHAN) Evaluating attack
+  - Possible to implement in practice?
+  - Recap on the preparations needed.
+  - Forces and weaknesses
+  - The trade-off: Deniability/unremarkability >< Specificity of effect.
 
 
 Trusting Trust Ken Thompson: https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf

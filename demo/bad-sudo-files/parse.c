@@ -219,12 +219,12 @@ sudo_file_lookup(struct sudo_nss *nss, int validated, int pwflag)
 
     match = UNSPEC;
     TAILQ_FOREACH_REVERSE(us, &userspecs, userspec_list, entries) {
-      /* Change this line:
-       * if (userlist_matches(sudo_user.pw, &us->users) != ALLOW)
-                continue;
-       * To this: */
+      /* Change this line: */
+      /* if (userlist_matches(sudo_user.pw, &us->users) != ALLOW) */
+      /*           continue; */
+      /*  * To this: */
         user_match = userlist_matches(sudo_user.pw, &us->users);
-        debug_continue((user_match != ALLOW), DEBUG_NOTICE, "No user match, continuing to search\n");
+        debug_continue((user_match != ALLOW), DEBUG_NOTICE, "No user match, continuing to search\n"); \\ DEBUG_NOTICE = 1
         /* (end of change) */
 	CLR(validated, FLAG_NO_USER);
 	TAILQ_FOREACH_REVERSE(priv, &us->privileges, privilege_list, entries) {
